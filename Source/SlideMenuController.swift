@@ -900,7 +900,7 @@ open class SlideMenuController: UIViewController, UIGestureRecognizerDelegate {
         if SlideMenuOptions.hideStatusBar {
             DispatchQueue.main.async(execute: {
                 if let window = UIApplication.shared.keyWindow {
-                    window.windowLevel = UIWindowLevelStatusBar + 1
+                    window.windowLevel = UIWindowLevelNormal
                 }
             })
         }
